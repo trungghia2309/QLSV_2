@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/stu_nav_item_home"
+        android:title="@string/title_home"
+        android:icon="@drawable/home"
+        />
+
+    <item android:id="@+id/stu_nav_item_info"
+        android:title="@string/title_info"
+        android:icon="@drawable/info"
+        />
+
+    <item android:id="@+id/stu_nav_item_result"
+        android:title="@string/title_result"
+        android:icon="@drawable/result"
+        />
+
+    <item android:id="@+id/stu_nav_item_changePW"
+        android:title="@string/title_change_pw"
+        android:icon="@drawable/lock"
+        />
+
+    <item android:id="@+id/stu_nav_item_logout"
+        android:title="@string/title_logout"
+        android:icon="@drawable/logout"
+        />
+</menu>

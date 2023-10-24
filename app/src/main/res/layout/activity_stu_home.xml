@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content_frame"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stu_home">
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:layout_width="257dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-30dp"
+            android:text="Chào Mừng Sinh Viên "
+            android:textSize="55px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stu_name"
+            android:layout_width="329dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="-250dp"
+            android:gravity="center"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/stu_home_drawerlayout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".stu_home"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/stu_home_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#8014375F"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/stu_home_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:id="@+id/stu_home_btns"
+                    android:layout_width="411dp"
+                    android:layout_height="360dp"
+                    android:background="#6D8199"
+                    android:layout_marginTop="300dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:ignore="MissingConstraints">
+
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_kqht"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="291dp"
+                        android:backgroundTint="@color/white"
+                        android:shadowColor="@color/black"
+                        android:text="Kết quả học tập"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_info"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/white"
+                        android:shadowColor="@color/black"
+                        android:text="Thông tin cá nhân"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_lt"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="140dp"
+                        android:backgroundTint="@color/white"
+                        android:shadowColor="@color/black"
+                        android:text="LỊCH THI"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pksmh"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="99dp"
+                        android:layout_marginEnd="281dp"
+                        android:backgroundTint="@color/white"
+                        android:shadowColor="@color/black"
+                        android:text="PHIẾU KHẢO SÁT MÔN HỌC"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pkstk"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="100dp"
+                        android:backgroundTint="@color/white"
+                        android:shadowColor="@color/black"
+                        android:text="PKS TOÀN KHOA"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_lh"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="100dp"
+                        android:backgroundTint="@color/white"
+                        android:shadowColor="@color/black"
+                        android:text="Liên hệ"
+                        android:textColor="@color/black"
+                        android:textSize="30px" />
+
+
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/stu_home_Nav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            app:headerLayout="@layout/layout_stu_nav_header"
+            app:menu="@menu/stu_nav_menu"
+            android:layout_gravity="start"
+            >
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

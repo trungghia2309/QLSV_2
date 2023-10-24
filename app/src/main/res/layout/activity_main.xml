@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ctec_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TRƯỜNG CAO ĐĂNG KINH TẾ - KỸ THUẬT CẦN THƠ"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CAN THO TECHNICAL ECONOMIC COLLEGE"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <RadioGroup
+        android:id="@+id/selec_G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_slc_sv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinh Viên" />
+
+        <RadioButton
+            android:id="@+id/rd_slc_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Giảng Viên" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#c2c5aa"
+            android:gravity="center"
+            android:hint="Tên đăng nhập"
+            android:inputType="text"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#c2c5aa"
+            android:gravity="center"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/create_acc_tch"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:backgroundTint="#00f5d4"
+            android:text="Tạo tài khoản"
+            android:textColor="@color/black"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="206dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#ffc8dd"
+            android:text="Đăng Nhập" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

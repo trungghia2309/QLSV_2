@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stu_fragment.frg_stu_result"
+    android:background="@color/white"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="KẾT QUẢ HỌC TẬP"
+        android:textSize="30dp"
+        android:textColor="#0f4c5c"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+</FrameLayout>

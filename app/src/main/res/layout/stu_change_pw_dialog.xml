@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/dmk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐỔI MẬT KHẨU"
+        android:textSize="35dp"
+        android:layout_marginLeft="70dp"
+        android:padding="15dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu cũ : "
+            android:textSize="27dp"
+            />
+        <EditText
+            android:id="@+id/stu_cpw_oldpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nhập mật khẩu cũ"
+            android:textSize="27dp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/stu_cpw_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Kiểm tra"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu mới : "
+            android:textSize="27dp" />
+        <EditText
+            android:id="@+id/stu_cpw_newpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nhập mật khẩu mới"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XN khẩu mới : "
+            android:textSize="27dp" />
+        <EditText
+            android:id="@+id/stu_cpw_cfpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nhập lại mật khẩu mới"
+            android:textSize="25dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stu_cpw_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="#fff1d0"
+        android:text="Xác Nhận"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/stu_cpw_cancle"
+        android:layout_width="132dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="-80dp"
+        android:backgroundTint="#60fff1d0"
+        android:text="Hủy"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+</LinearLayout>
