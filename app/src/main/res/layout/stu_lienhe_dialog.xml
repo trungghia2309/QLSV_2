@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="LIÊN HỆ"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trường Cao Đẳng kinh tế Kỹ Thuật"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điện thoai: (84-0292)   3826072"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fax:  (84-0292)  3821326"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:  ktktct@ctec.edu.vn"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng Quản Lý Đào tạo"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Điện thoại: 0292.3.826.072"
+    android:textSize= "18dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: pqldt@ctec.edu.vn."
+        android:textSize= "18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng Công Tác Học Sinh - Sinh Viên"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điện thoại: 0292.3.769.485"
+        android:textSize= "18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: pctcthssv@ctec.edu.vn"
+        android:textSize= "18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"/>
+    <Button
+        android:id="@+id/stu_lienhe_xongbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xong"
+        android:textSize="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="40dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
