@@ -29,7 +29,7 @@ import com.tikeii.quanlyctec.stu_fragment.frg_stu_result;
 
 
 public class stu_home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    Button info_btn, result_btn;
+    Button info_btn, result_btn,lichthi_btn;
     TextView stu_home_name;
     ctec_database db;
     DrawerLayout stu_draw;
@@ -75,6 +75,7 @@ public class stu_home extends AppCompatActivity implements NavigationView.OnNavi
         stu_draw = findViewById(R.id.stu_home_drawerlayout);
         info_btn = findViewById(R.id.btn_info);
         result_btn = findViewById(R.id.btn_kqht);
+        lichthi_btn = findViewById(R.id.btn_lt);
         stu_home_name = findViewById(R.id.stu_name);
         db = new ctec_database(this);
         Intent g_int = getIntent();
@@ -92,6 +93,14 @@ public class stu_home extends AppCompatActivity implements NavigationView.OnNavi
             public void onClick(View v) {
                 Intent i = new Intent(stu_home.this,stu_info.class);
                 i.putExtra("MSSV_INPUT",stu_id);
+                startActivity(i);
+            }
+        });
+
+        lichthi_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), stu_lichthi_webview.class);
                 startActivity(i);
             }
         });

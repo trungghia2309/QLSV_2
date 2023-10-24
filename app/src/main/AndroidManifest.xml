@@ -15,6 +15,9 @@
         android:theme="@style/Theme.QUANLYCTEC"
         tools:targetApi="31">
         <activity
+            android:name=".stu_pksmh_webview"
+            android:exported="false" />
+        <activity
             android:name=".stu_lichthi_webview"
             android:exported="false" />
         <activity
