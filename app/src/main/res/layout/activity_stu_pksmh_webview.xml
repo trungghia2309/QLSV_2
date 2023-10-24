@@ -4,6 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".stu_pksmh_webview">
+    tools:context=".stu_pksmh_webview"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/stu_home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#8014375F"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <Button
+            android:id="@+id/stu_pksmh_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở lại"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:text="Phiếu Khảo Sát Môn Học"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/pskmh"
+
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        />
 
 </LinearLayout>
